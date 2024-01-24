@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Leader Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #FF6347, #FFA500);
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px; /* Increased header padding */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1,
+        p {
+            margin: 0;
+        }
+
+        nav {
+            position: absolute;
+            top: 30px; /* Adjusted nav top position */
+            right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .social-icons {
+            position: absolute;
+            top: 30px; /* Adjusted social icons top position */
+            left: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #de1717;
+            padding: 20px; /* Increased marquee padding */
+        }
+
+        .marquee p {
+            display: inline-block;
+            animation: marquee 20s linear infinite; /* Increased marquee animation duration */
+            transform: translateX(100%);
+            word-spacing: 7px;
+        }
+
+        /* Profile Photo and Description Styles */
+        #profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        #profile img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+            width: 150px;
+            height: 150px;
+        }
+
+        #profile-details {
+            text-align: center;
+        }
+
+        #profile-details h1 {
+            margin-bottom: 10px;
+        }
+
+        #dialogue-box {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+        }
+
+        /* Image Slider Styles */
+        #slider {
+            max-width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #slider img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+
+        #slider img.active {
+            display: block;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: '\2022';
+            color: #4CAF50;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #FF6347, #FFA500);
+            color: #fff;
+        }
+
+        @keyframes marquee {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/politicalleader" target="_blank">Facebook</a>
+            <a href="https://twitter.com/politicalleader" target="_blank">Twitter</a>
+            <!-- Add more social media links as needed -->
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#initiatives">Initiatives</a>
+            <!-- Add more links as needed -->
+        </nav>
+    </header>
+
+    <!-- Marquee (Running Text) -->
+    <div class="marquee">
+        <p>"मैंने स्वप्न देखा कि जीवन आनंद है. मैं जागा और पाया कि जीवन सेवा है. मैंने सेवा की और पाया कि सेवा
+            में ही आनंद है.</p>
+    </div>
+
+    <!-- Profile Photo and Description -->
+    <div id="profile">
+        <img src="vijay-pandey.jpg" alt="Profile Photo">
+        <div id="profile-details">
+            <h1>विजय पाण्डेय</h1>
+            <p>भाजपा कार्यकर्ता , धनबाद सांसदीय क्षेत्र</p>
+        </div>
+    </div>
+
+    <div id="dialogue-box">
+        <p>This is a brief description of the political leader. Highlighting their background, values, and commitment to public service.</p>
+    </div>
+
+    <!-- Image Slider -->
+    <div id="slider">
+        <img class="active" src="download (1).jpeg" alt="Slide 1">
+        <img src="download (2).jpeg" alt="Slide 2">
+        <img src="download.jpeg" alt="Slide 3">
+        <!-- Add more images as needed -->
+    </div>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This is a brief description of the political leader, highlighting their background, values, and commitment to public service.</p>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Year-wise list of notable achievements</li>
+            <li>Another significant accomplishment</li>
+            <!-- Add more achievements as needed -->
+        </ul>
+    </section>
+
+    <section id="initiatives">
+        <h2>Initiatives</h2>
+        <p>Overview of key initiatives taken by the political leader for the community and constituents.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Connect with [Political Leader's Name] for inquiries, feedback, or to get involved.</p>
+        <p>Email: politicalleader@example.com</p>
+        <p>Phone: (555) 123-4567</p>
+    </section>
+
+    <footer>
+        &copy; 2024 Political Leader Portfolio
+    </footer>
+
+    <!-- JavaScript for Image Slider -->
+    <script>
+        // Simple image slider logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('#slider img');
+
+        function showSlide(index) {
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+            });
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    </script>
+</body>
+
+</html>
